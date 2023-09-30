@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>Dados</h2>
+    <script>
+        function saltarLinea() {
+            document.write("<br>");
+        }
+
+        function imprimir(frase) {
+            document.write(frase);
+            saltarLinea();
+        }
+       var numeroPensado = Math.floor(Math.random() * 10) + 1;
+       var numeroLanzado = parseInt(prompt("Ingrese su munero favorito que este entre 0 - 10")); 
+       if (numeroPensado == numeroLanzado) {
+            imprimir("Usted es el ganador con el numero " + numeroLanzado)
+       }
+         else{
+        imprimir("No has acertado, mejor suerte paar la proxima el munero ganador es " + numeroPensado)
+       }
+
+    </script>    
+    
+</body>
+</html>

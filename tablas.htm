@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>Tablas de multiplicar</h2>
+    <script>
+        function saltarLinea() {
+            document.write("<br>");
+        }
+
+        function imprimir(frase) {
+            document.write(frase);
+            saltarLinea();
+        }
+       
+       let i = 1;
+        
+       
+    //    let num = parseInt(prompt("Ingrese la tabla que desea saber el resultado"))
+    //    while (i <= 10  ) {
+    //     imprimir (num + " x " + i + " = " + num * i );
+    //     i++;
+    //    }
+       let num = parseInt(prompt("Ingrese la tabla que desea saber el resultado"))
+       for (let i = 0; i <= 10; i++) {
+        imprimir (num + " x " + i + " = " + num * i );
+        
+       }
+       
+    </script>    
+    
+</body>
+</html>

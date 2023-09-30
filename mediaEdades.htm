@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>Promedio de las edades</h2>
+    <script>
+        function saltarLinea() {
+            document.write("<br>");
+        }
+
+        function imprimir(frase) {
+            document.write(frase);
+            saltarLinea();
+        }
+    //    let edadpadre = 22;
+    //    let edadmadre = 45;
+    //    let edadhijo = 67;
+    //    let edadhija =67;
+
+    //    var edadpadre = parseInt(prompt("ingrese edad del padre"));
+    //    var edadmadre = parseInt(edadpadre("ingrese edad del madre"));
+    //    var edadhijo = parseInt(prompt("ingrese edad hojo"));
+    //    var edadhija = parseInt(prompt("ingrese edad hija"));
+    var numeromiembros = parseInt(prompt("ingrese la cantida de integrantes de la familia"));
+    var contador = 1;
+    var totaledades = 0;
+    while (contador <= numeromiembros) {
+        
+
+        edad = parseInt(prompt("ingrese la edad del familiar"));
+        totaledades = totaledades + edad;
+        contador++;
+    }
+    mediaedades = totaledades / numeromiembros;
+    imprimir ("la media de las edades es " + mediaedades);
+    //    let totaledad = edadpadre + edadmadre + edadhijo + edadhija;
+    //    let mediaedad = totaledad / 4;
+
+    //    imprimir(" la media de la edad es " + mediaedad);
+       
+    </script>    
+    
+</body>
+</html>
